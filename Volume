@@ -1,0 +1,53 @@
+import math
+
+# Main function to interact with the user
+def main():
+    print("Volume Calculator")
+    print("1. Cube")
+    print("2. Cubiod")
+    print("3. Cylinder")
+    print("4.  Rectanglar Prism")
+    print("5. Cone")
+    print("6. Pyramid")
+    choice = input("Enter your choice (1/2/3/4/5/6):")
+
+# Function to calculate volume of a cube
+    if choice == '1':
+        length = float(input("Enter length of rectangle: "))
+        Volume = length  ** 3
+        print = Volume
+    # Function to calculate Volume of a Cubiod
+    elif choice == '2':
+        length = float(input("Enter  length of Cubiod: "))
+        base = float(input("Enter base of : Cubiod: "))
+        height = float(input("Enter height of Cubiod: "))
+        Volume = length  * base * height
+        print = Volume
+ # Function to calculate volume of a cylinder   
+    elif choice == '3':
+        radius  = float(input("Enter radius of cylinder: "))
+        height = float(input("Enter height of cylinder: "))
+        Volume = math.pi * radius * radius * height
+        print = Volume   
+# Function to calculate volume of a Rectanglar Prism
+    elif choice == '4':
+        length = float(input("Enter  length of Rectanglar Prism: "))
+        width = float(input("Enter  width of Rectanglar Prism: "))
+        height = float(input("Enter height of Rectanglar Prism: "))
+        Volume = length  *  width * height
+        print = Volume
+ # Function to calculate volume of a cone   
+    elif choice == '5':
+        radius  = float(input("Enter radius of cone: "))
+        height = float(input("Enter height of cone: "))
+        Volume = math.pi * radius * radius * height * 1/3
+        print = Volume   
+# Function to calculate volume of a Pyramid
+    elif choice == '4':
+        length = float(input("Enter  length of Pyramid: "))
+        width = float(input("Enter  width of Pyramid: "))
+        height = float(input("Enter height of Pyramid: "))
+        Volume = length  *  width * height
+        print = Volume
+    else:
+        print("Invalid choice")
