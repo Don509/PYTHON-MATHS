@@ -1,0 +1,51 @@
+import math
+
+# Main function to interact with the user
+def main():
+    print("Area Calculator")
+    print("1. Rectangle")
+    print("2. Square")
+    print("3. Circle")
+    print("4. Triangle")
+    print("5. cylinder")
+    print("6. parallelogram ")
+    choice = input("Enter your choice (1/2/3/4/5/6):")
+
+# Function to calculate area of a rectangle
+    if choice == '1':
+        length = float(input("Enter length of rectangle: "))
+        width = float(input("Enter width of rectangle: "))
+        Area = length  * width
+        print = Area
+    # Function to calculate area of a square
+    elif choice == '2':
+        side = float(input("Enter side length of square: "))
+        Area = side* side 
+        print = Area
+    # Function to calculate area of a circle
+    elif choice == '3':
+        radius = float(input("Enter radius of circle: "))
+        Area = radius* radius * 22/7
+        print = Area
+   # Function to calculate area of a triangle
+    elif choice == '4':
+        base = float(input("Enter base length of triangle: "))
+        height = float(input("Enter height of triangle: "))
+        Area = base*height  * 1/2
+        print = Area
+    # Function to calculate area of a cylinder
+    elif choice == '5':
+        radius = float(input("Enter radius of cylinder: "))
+        height = float(input("Enter height of cylinder : "))
+        TSA = 2 * radius * height * 22/7 + 2 * radius * radius
+        CSA = 2 * radius* radius * 22/7
+        print = TSA
+        print = CSA
+    elif choice == '6':
+        base = float(input("Enter base length of parralelogram: "))
+        height = float(input("Enter height of parallelogram: "))
+        Area = base*height
+        print = Area
+    else:
+        print("Invalid choice")
+
