@@ -1,0 +1,5 @@
+#cube calculator
+number = float(input("Enter first number: "))
+def cube(number):
+    return number ** 3
+print(f"The cube of {number} is {cube(number)}")
