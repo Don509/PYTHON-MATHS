@@ -1,0 +1,14 @@
+# Function to convert seconds to minutes
+def seconds_to_minutes(seconds):
+    minutes = seconds // 60  # Get the number of whole minutes
+    remaining_seconds = seconds % 60  # Get the remaining seconds
+    return minutes, remaining_seconds
+
+# Input: Number of seconds
+seconds = int(input("Enter the number of seconds: "))
+
+# Convert seconds to minutes
+minutes, remaining_seconds = seconds_to_minutes(seconds)
+
+# Print the result
+print(f"{seconds} seconds is equal to {minutes} minutes and {remaining_seconds} seconds.")
