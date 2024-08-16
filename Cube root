@@ -1,0 +1,12 @@
+# Function to calculate the cube root
+def cube_root(x):
+    return x ** (1/3)
+
+# Input: Number for which to find the cube root
+number = float(input("Enter a number: "))
+
+# Calculate the cube root
+result = cube_root(number)
+
+# Print the result
+print(f"The cube root of {number} is {result:.4f}")
