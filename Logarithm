@@ -1,0 +1,15 @@
+import math
+
+# Function to calculate logarithm
+def calculate_logarithm(x, base=10):
+    return math.log(x, base)
+
+# Input: Number and base for which to find the logarithm
+number = float(input("Enter a number: "))
+base = float(input("Enter the base (default is 10): ") or 10)
+
+# Calculate the logarithm
+result = calculate_logarithm(number, base)
+
+# Print the result
+print(f"The logarithm of {number} with base {base} is {result:.4f}")
