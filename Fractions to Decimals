@@ -1,0 +1,14 @@
+# Function to convert fraction to decimal
+def fraction_to_decimal(numerator, denominator):
+    return numerator / denominator
+
+# Input: Numerator and denominator of the fraction
+numerator = float(input("Enter the numerator: "))
+denominator = float(input("Enter the denominator: "))
+
+# Convert fraction to decimal
+if denominator != 0:
+    result = fraction_to_decimal(numerator, denominator)
+    print(f"The decimal equivalent of the fraction {numerator}/{denominator} is {result:.4f}")
+else:
+    print("Error: Denominator cannot be zero.")
