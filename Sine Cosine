@@ -1,0 +1,9 @@
+import math
+
+def trigonometric_functions(angle_degrees):
+    angle_radians = math.radians(angle_degrees)
+    return (math.sin(angle_radians), math.cos(angle_radians), math.tan(angle_radians))
+
+angle = float(input("Enter the angle in degrees: "))
+sine, cosine, tangent = trigonometric_functions(angle)
+print(f"Sine: {sine:.4f}, Cosine: {cosine:.4f}, Tangent: {tangent:.4f}")
