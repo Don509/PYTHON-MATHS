@@ -1,0 +1,23 @@
+# Function to check if two ratios form a proportion
+def check_proportion(a, b, c, d):
+    if b == 0 or d == 0:
+        return "undefined (division by zero)"
+    else:
+        return a * d == b * c
+
+# Input: Four numbers to form two ratios
+a = float(input("Enter the first number (a): "))
+b = float(input("Enter the second number (b): "))
+c = float(input("Enter the third number (c): "))
+d = float(input("Enter the fourth number (d): "))
+
+# Check if the two ratios form a proportion
+result = check_proportion(a, b, c, d)
+
+# Print the result
+if result == "undefined (division by zero)":
+    print("The proportion is undefined because one of the denominators is zero.")
+elif result:
+    print(f"The ratios {a}/{b} and {c}/{d} form a proportion.")
+else:
+    print(f"The ratios {a}/{b} and {c}/{d} do not form a proportion.")
