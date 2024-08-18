@@ -1,0 +1,20 @@
+# Function to calculate the ratio
+def calculate_ratio(a, b):
+    if b != 0:
+        ratio = a / b
+        return ratio
+    else:
+        return "undefined (division by zero)"
+
+# Input: Two numbers for which to find the ratio
+numerator = float(input("Enter the first number (numerator): "))
+denominator = float(input("Enter the second number (denominator): "))
+
+# Calculate the ratio
+result = calculate_ratio(numerator, denominator)
+
+# Print the result
+if result == "undefined (division by zero)":
+    print("The ratio is undefined because the denominator is zero.")
+else:
+    print(f"The ratio of {numerator} to {denominator} is {result:.4f}")
