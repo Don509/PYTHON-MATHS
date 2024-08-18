@@ -1,0 +1,15 @@
+import math
+
+# Function to calculate antilogarithm
+def calculate_antilogarithm(log_value, base=10):
+    return base ** log_value
+
+# Input: Logarithm value and base for which to find the antilogarithm
+log_value = float(input("Enter the logarithm value: "))
+base = float(input("Enter the base (default is 10): ") or 10)
+
+# Calculate the antilogarithm
+result = calculate_antilogarithm(log_value, base)
+
+# Print the result
+print(f"The antilogarithm of {log_value} with base {base} is {result:.4f}")
