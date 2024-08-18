@@ -1,0 +1,18 @@
+# Function to calculate the transpose of a matrix
+def transpose_matrix(matrix):
+    # Get the number of rows and columns in the matrix
+    rows = len(matrix)
+    cols = len(matrix[0])
+    
+    # Initialize the transpose matrix with zeros
+    transpose = [[0 for _ in range(rows)] for _ in range(cols)]
+    
+    # Perform the transpose
+    for i in range(rows):
+        for j in range(cols):
+            transpose[j][i] = matrix[i][j]
+    
+    return transpose
+
+# Input: A matrix
+matrix = [
