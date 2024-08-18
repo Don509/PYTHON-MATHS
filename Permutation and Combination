@@ -1,0 +1,13 @@
+import math
+
+def permutations(n, r):
+    return math.perm(n, r)
+
+def combinations(n, r):
+    return math.comb(n, r)
+
+n = int(input("Enter the total number of items (n): "))
+r = int(input("Enter the number of items to choose (r): "))
+
+print(f"The number of permutations of {n} items taken {r} at a time is {permutations(n, r)}")
+print(f"The number of combinations of {n} items taken {r} at a time is {combinations(n, r)}")
