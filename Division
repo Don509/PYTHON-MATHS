@@ -1,0 +1,19 @@
+# Function to perform division
+def divide_numbers(numerator, denominator):
+    if denominator == 0:
+        return "undefined (division by zero)"
+    else:
+        return numerator / denominator
+
+# Input: Numerator and denominator for division
+numerator = float(input("Enter the numerator: "))
+denominator = float(input("Enter the denominator: "))
+
+# Perform the division
+result = divide_numbers(numerator, denominator)
+
+# Print the result
+if result == "undefined (division by zero)":
+    print("Error: Division by zero is undefined.")
+else:
+    print(f"The result of {numerator} divided by {denominator} is {result:.4f}")
