@@ -1,0 +1,13 @@
+import math
+
+# Function to compute HCF (GCD) of two numbers
+def hcf(a, b):
+    return math.gcd(a, b)
+
+# Input: Two numbers
+a = int(input("Enter the first number: "))
+b = int(input("Enter the second number: "))
+
+# Calculate HCF
+result = hcf(a, b)
+print(f"The HCF of {a} and {b} is {result}")
